@@ -14,11 +14,20 @@
   --footer-address-color:rgba(255, 255, 255, 1);
   --primary-background-color:rgba(47, 48, 58, 1);
   --primary-button-color:rgba(245, 244, 250, 1);
+  --color-hover-bootton:rgba(25,170,250)
   }
+ html {
+  box-sizing: border-box;
+}
 
-
+*,
+*::before,
+*::after{
+  box-sizing:inherit;
+}
 
 .list{
+
   list-style:none;
   
  }
@@ -29,9 +38,257 @@
 body{
   background-color:var(--primary-white-color);
   color:var(--primary-text-color); 
-  font-family:'Roboto',sans-serif  ;
+  font-family:'Roboto',sans-serif;
+  margin: 0;
 }
-              /* логотип */
+
+
+                 /* !!!!!!!!КОНТЕЙНЕР!!!!!!!! */
+
+                 /* .containr{
+                   width:1200px ;
+                   padding-left: 15px;
+                   padding-right: 15px;
+                   margin-left: auto;
+                   margin-right: auto;
+
+                 } */
+
+
+ /* розметка пробная */
+
+.container{
+  background-color: aquamarine;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 1200px;
+  outline: 2px solid tomato;
+}
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+.min{
+  display: flex;
+  align-items: center;
+  
+
+}
+
+
+                        /* ПРИМЕР УДАЛЕНИЯ КРАЙНИХ МАРДЖИНОВ */
+/* .site-nav .item:not(:last-child ){
+  margin-right: 50px;
+  outline: 2px solid yellowgreen;
+  background-color: blanchedalmond;
+  
+} */
+
+/* .site-nav .item + .item{
+  margin-left: 50px;
+} */
+
+
+.site-nav .item{
+  margin-right: 50px;
+  /* outline: 2px solid yellowgreen; */
+  /* background-color: blanchedalmond; */
+  
+}
+
+.site-nav .item:last-child{
+  margin-right: 0;
+}
+ 
+.site-nav .link{
+  display: block;
+  padding: 40px 0px;
+}
+
+
+.site-nav{
+  margin-left: 95px;
+  display: flex;
+}
+
+.auth-nav{
+  margin-left: auto;
+  display: flex;
+}
+
+.auth-nav .item + .item{
+  margin-left:50px;
+
+}
+
+.heroes-frame{
+
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  outline: 2px solid greenyellow
+}
+
+.speciality-blok{
+display: flex;
+margin-bottom: 0;
+margin-top: 0;  
+margin-bottom:95px ;
+margin-left: auto;
+margin-right: auto;
+padding-left: 15px;
+padding-right: 15px;
+width: 1170px;
+outline:4px solid lightcoral;
+
+}
+
+.special-title .indent-benefitc:not(:last-child){
+  margin-right: 30px;
+}
+
+  .indent{
+    margin-top: 0;
+    margin-bottom: 10px;
+
+  }
+
+  /* .indent-benefitc{
+
+    margin-right: 30px;
+  } */
+  
+
+.work-blok{
+  margin-left: auto;
+  margin-right: auto;
+  width:1200px;
+  outline:4px solid blueviolet;
+
+}
+.work{
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-bottom: 95px;
+}
+  
+ 
+ 
+.section-list{
+
+  /* margin-bottom: ; */
+ 
+  
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 1170px;
+  outline:4px solid brown;
+}
+ 
+
+.staff{
+  margin-top: 0;
+  margin-bottom: 0;
+
+} 
+
+.footer-box{
+  margin-left: auto;
+  margin-right: auto;
+  width:1200px ;
+  outline: 4px solid lightgreen
+  
+ 
+}
+.section{
+ text-align: center;
+  padding: 95px;
+}
+
+
+
+.secret{
+  display:none;
+ 
+}
+
+.filter-button{
+  
+  border-radius: 4px;
+  padding: 6px 22px;
+  min-width: 70px;
+  text-align: center;
+}
+
+                    /* !!!!!!!!!!РОЗМЕТКА ПРОБНАЯ ПОРТФОЛИО!!!!!!!!! */
+                     .section{
+                       background-color: darkkhaki;
+                     }
+                    .section-container{
+                      
+                      width: 1200px;
+                      padding-left: 15px;
+                      padding-right: 15px;
+                      margin-left: auto;
+                      margin-right: auto;
+                      outline: 2px solid red;
+                    }
+                    .filter{
+                      padding: 0;
+                      margin-right: auto;
+                      align-items: center;
+                    }
+                     
+                    
+                      
+                    .filter{
+                      background-color: blanchedalmond;
+                      display: flex;
+                    }
+
+                    .filter .item:not(:last-child){
+                      margin-right: 8px;
+                      
+                    }
+
+                    .project{
+                      padding: 0;
+                      display: flex;
+                      flex-wrap: wrap;
+                     
+                    }
+                    /* .cards{
+                      width:370px ;
+                    } */
+                     .cards{
+                      width: calc((100% - 60px) / 3)
+                    }
+
+                    .project .cards{
+                      margin-right: 30px;
+                      margin-bottom: 30px;
+                    }
+                    .project .cards:nth-child(3n){
+                      margin-right:0px ;
+                    }
+                    .project .cards:nth-last-child(-n+3){
+                      margin-bottom: 0;
+                    }
+
+                    
+                     
+
+
+
+
+             /* логотип */
+              
 .logo{
 font-family:'Raleway';
 font-style: normal;
@@ -71,7 +328,12 @@ color: black;
  .auth-nav :focus,
  .auth-nav :hover{
 color: var(--accent-color) ;
- }  
+ } 
+ 
+ .auth-nav{
+   margin-top: 0;
+   margin-bottom: 0;
+ }
 
  .info-nav {
   text-decoration: none;
@@ -83,29 +345,40 @@ color: var(--accent-color) ;
  }
              /* Шапка (студия) */
 .heroes{
+ margin-bottom: 95px;
  background-color:var(--primary-background-color);
 }
+  
+
              
 .header{
+  /* background-color: aqua; */
+  margin: 0;
+  padding: 0;
   font-weight: 900;
   font-size: 44px;
   line-height:1.4;
-  text-align: center;
+ 
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color:var(--primary-white-color);
-}
-.button-man{
+  margin-bottom:80px ;
+} 
+ 
+
+.button-man {
+  border-radius:4px ;
+  padding:10px 32px ;
+  box-sizing: border-box;
   font-weight: 700;
   font-size: 16px;
   line-height:1.9;
-  display: flex;
+  letter-spacing: 0.06em;
   align-items: center;
   text-align: center;
-  letter-spacing: 0.06em;
-} 
- 
- .section-title{
+}
+
+.section-title{
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -122,13 +395,26 @@ color: var(--accent-color) ;
   color: var(--title-text-color);
  }
   .benefits{
+    margin-bottom: 0;
+    margin-top: 0;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
+    
+  }
+  .indent-benefitc{
+   width: 270px; 
   }
   /* чем ми занимаемся */
+
+  .indent-benefitc:not(:f){
+  margin-right: 30px;
+
+  }
   .section-work{
+    margin-top: 0;
+    margin-bottom: 0;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.7;
@@ -146,6 +432,8 @@ color: var(--accent-color) ;
   color: var(--title-text-color);
 }
 .speciality{
+  margin-top: 0;
+  margin-bottom: 0;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.2;
@@ -156,7 +444,27 @@ color: var(--accent-color) ;
 
   
  /* Кнопки фильтр портфолио */
+
+  
+  /* .button {
+  display: inline-block;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  padding: 11px 34px;
+  min-width: 130px;
+
+  color: var(--title-text-color);
+  background-color: var(--primary-white-color);
+
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.2;
+  text-decoration: none;
+  text-align: center;
+} */
+
 .button{
+  display: inline-block;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -167,8 +475,7 @@ color: var(--accent-color) ;
   color: var(--title-text-color);
   background-color:var(--primary-button-color);
   }
-  
-  
+
   .button:focus,
   .button:hover{
     color: var(--primary-white-color);
@@ -178,7 +485,10 @@ color: var(--accent-color) ;
     color: var(--primary-white-color);
     background-color: var(--accent-color);}
     
-  
+    .button.primary:hover,
+    .button.primary:focus{
+    background-color:var(--color-hover-bootton);
+    }
   
   .button.secondary{
     color:var(--title-text-color) ;
@@ -232,6 +542,18 @@ color: var(--accent-color) ;
           color:var(--foorer-text-color);
           text-decoration: none;
         } 
+
+
+
+
+
+  
+
+ 
+
+
+  
+ 
         
  
 
