@@ -14,7 +14,8 @@
   --footer-address-color:rgba(255, 255, 255, 1);
   --primary-background-color:rgba(47, 48, 58, 1);
   --primary-button-color:rgba(245, 244, 250, 1);
-  --color-hover-bootton:rgba(25,170,250)
+  --color-hover-bootton:rgba(25,170,250);
+  --portfolio-project-color:rgba(238, 238, 238, 1);
   }
  html {
   box-sizing: border-box;
@@ -41,6 +42,16 @@ body{
   font-family:'Roboto',sans-serif;
   margin: 0;
 }
+                        /* TESTTTTTTTT */
+.testt{
+position: relative;
+width: 1600px;
+
+margin-left:auto;
+margin-right:auto;
+}
+                          /* TTTTTTTTTTTTT */
+
 
 
                  /* !!!!!!!!КОНТЕЙНЕР!!!!!!!! */
@@ -58,13 +69,13 @@ body{
  /* розметка пробная */
 
 .container{
-  background-color: aquamarine;
+  /* background-color: aquamarine; */
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
   width: 1200px;
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
 }
 .main-nav {
   display: flex;
@@ -130,7 +141,7 @@ body{
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
-  outline: 2px solid greenyellow
+  /* outline: 2px solid greenyellow */
 }
 
 .speciality-blok{
@@ -142,32 +153,45 @@ margin-left: auto;
 margin-right: auto;
 padding-left: 15px;
 padding-right: 15px;
-width: 1170px;
-outline:4px solid lightcoral;
+width: 1200px;
+/* outline:4px solid lightcoral; */
 
 }
 
 .special-title .indent-benefitc:not(:last-child){
   margin-right: 30px;
 }
+/* .benefits{
+  
+  border: 2px solid cyan;
+} */
 
   .indent{
+  
     margin-top: 0;
     margin-bottom: 10px;
-
+    /* border: 2px solid cyan; */
   }
+  /* .special-title .indent{
+   background-color: aqua;
+ } */
+ 
 
-  /* .indent-benefitc{
-
-    margin-right: 30px;
-  } */
+  .indent-benefitc{
+    text-align: center;
+    text-align: left;
+    
+    
+    
+    /* margin-right: 30px; */
+  }
   
 
 .work-blok{
   margin-left: auto;
   margin-right: auto;
   width:1200px;
-  outline:4px solid blueviolet;
+  /* outline:4px solid blueviolet; */
 
 }
 .work{
@@ -187,8 +211,8 @@ outline:4px solid lightcoral;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  width: 1170px;
-  outline:4px solid brown;
+  width: 1200px;
+  /* outline:4px solid brown; */
 }
  
 
@@ -202,7 +226,7 @@ outline:4px solid lightcoral;
   margin-left: auto;
   margin-right: auto;
   width:1200px ;
-  outline: 4px solid lightgreen
+  /* outline: 4px solid lightgreen */
   
  
 }
@@ -226,10 +250,14 @@ outline:4px solid lightcoral;
   text-align: center;
 }
 
+.dvig{
+  padding-left:280px ;
+  padding-right:auto;
+}
                     /* !!!!!!!!!!РОЗМЕТКА ПРОБНАЯ ПОРТФОЛИО!!!!!!!!! */
-                     .section{
+                     /* .section{
                        background-color: darkkhaki;
-                     }
+                     } */
                     .section-container{
                       
                       width: 1200px;
@@ -237,7 +265,7 @@ outline:4px solid lightcoral;
                       padding-right: 15px;
                       margin-left: auto;
                       margin-right: auto;
-                      outline: 2px solid red;
+                      /* outline: 2px solid red; */
                     }
                     .filter{
                       padding: 0;
@@ -248,7 +276,9 @@ outline:4px solid lightcoral;
                     
                       
                     .filter{
-                      background-color: blanchedalmond;
+                      display: inline;
+                     padding-left: auto;
+                     padding-right: auto;
                       display: flex;
                     }
 
@@ -262,6 +292,10 @@ outline:4px solid lightcoral;
                       display: flex;
                       flex-wrap: wrap;
                      
+                    }
+                    .cards{
+                      /* background-color:var(--footer-address-color); */
+                      background-color: aliceblue;
                     }
                     /* .cards{
                       width:370px ;
@@ -394,6 +428,8 @@ color: var(--accent-color) ;
   text-transform: uppercase;
   color: var(--title-text-color);
  }
+    
+ 
   .benefits{
     margin-bottom: 0;
     margin-top: 0;
@@ -403,18 +439,30 @@ color: var(--accent-color) ;
     letter-spacing: 0.03em;
     
   }
+  
   .indent-benefitc{
    width: 270px; 
   }
+  
+
+
+  /* .indent-benefitc:not(:f){
+    margin-right: 30px;
+  
+    } */
   /* чем ми занимаемся */
-
-  .indent-benefitc:not(:f){
-  margin-right: 30px;
-
+  .work{
+    display: flex;
   }
+  .work-img:not(:last-child){
+    padding-right:30px ;
+  }
+
+  
   .section-work{
     margin-top: 0;
     margin-bottom: 0;
+    padding-bottom:50px ;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.7;
@@ -422,24 +470,60 @@ color: var(--accent-color) ;
     letter-spacing: 0.03em;
     color: var(--title-text-color); 
   }
+
+
  
 /* наша команда */
+
+.section-work{
+  text-align: center;
+  padding: 0;
+  padding-bottom:50px ;
+  
+}
+.staff{
+  padding-left: 0;
+  padding-right: 0;
+  display: flex;
+  
+}
+.staff-work:not(:last-child){
+  margin-right: 30px;
+}
+.staff-work{
+  border-radius: 0px 0px 4px 4px;
+
+  background-color:var(--footer-address-color)
+}
+
 .employee {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top:30px ;
+  padding-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height:1.2;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
 }
+
+.sek-test{
+  background-color:var(--primary-button-color)
+}
+  
 .speciality{
   margin-top: 0;
   margin-bottom: 0;
+  padding-bottom: 30px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.03em;
 
 }
+
+
 
 
   
@@ -517,6 +601,24 @@ color: var(--accent-color) ;
  }
  
          /* футер */
+         .footer-box{
+           width:1200px ;
+           padding-left: 15px;
+           padding-right: 15px;
+           padding-bottom: 60px;
+         } 
+         .footer-logo{
+           display: block;
+           padding-bottom: 20px;
+         }
+
+          .footer-nav>.auth-info:not(:last-child){
+           padding-bottom:9px ;
+         } 
+
+         .footer-nav{
+          display: contents;
+         }
 
          #address{
            font-style:normal;
@@ -538,7 +640,7 @@ color: var(--accent-color) ;
           text-decoration: none;
           color:var(--footer-address-color)
         }
-        .info,footer{
+        .info.footer{
           color:var(--foorer-text-color);
           text-decoration: none;
         } 
