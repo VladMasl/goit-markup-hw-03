@@ -88,6 +88,9 @@ body{
 .min{
   display: flex;
   align-items: center;
+}
+
+.header-decor{  
   border-bottom:1px solid #EEEEEE;
   
 
