@@ -238,7 +238,16 @@ width: 1200px;
 
 
 .secret{
-  display:none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
  
 }
 
@@ -254,7 +263,7 @@ width: 1200px;
   padding-left:280px ;
   padding-right:auto;
 }
-/* !!!!!!!!!!РОЗМЕТКА ПРОБНАЯ ПОРТФОЛИО!!!!!!!!! */
+/* !!!!!!!!!!РОЗМЕТКА ПОРТФОЛИО!!!!!!!!! */
                      
 .section-container{
   width: 1200px;
@@ -293,7 +302,6 @@ width: 1200px;
   padding: 0;
 }
 .cards-border{
-  width: 370px;;
   border: 1px solid #EEEEEE;
   border-top: 0;
 
